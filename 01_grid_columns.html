@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Basics & Columns</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .item {
+            padding: 3rem;
+            background: #edf6f9;
+            border: #83c5be 1px solid;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="item">Items 1</div>
+        <div class="item">Items 2</div>
+        <div class="item">Items 3</div>
+    </div>
+
+    <main>
+        <section>
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In et error ad eligendi aliquid incidunt aperiam
+                reprehenderit facere, ab culpa inventore, sed eos quos perspiciatis eius ducimus dolore accusantium
+                suscipit.</p>
+        </section>
+        <aside>
+            <h2>Some text</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima esse nostrum velit, distinctio
+                voluptatibus neque?</p>
+        </aside>
+    </main>
+
+</body>
+
+</html>
